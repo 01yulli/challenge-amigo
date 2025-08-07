@@ -4,6 +4,8 @@ let amigos = [];
 let nomeAmigo;
 listaDeAmigo = document.getElementById('listaAmigos');
 listaDeAmigo.innerHTML = '';
+listaDeAmigo = document.getElementById('listaAmigos');
+listaDeAmigo.innerHTML = '';
 function adicionarAmigo() {
     nomeAmigo = document.getElementById('amigo').value;
     if (nomeAmigo == '') {
@@ -38,3 +40,4 @@ function limparCampo() {
 }
 
 console.log(amigos);
+

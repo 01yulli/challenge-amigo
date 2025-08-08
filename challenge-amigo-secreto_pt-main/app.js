@@ -1,4 +1,5 @@
 let amigos = [];
+let teste;
 let nomeAmigo;
 listaDeAmigo = document.getElementById('listaAmigos');
 listaDeAmigo.innerHTML = '';

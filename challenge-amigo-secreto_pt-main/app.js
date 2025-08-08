@@ -4,6 +4,7 @@ let amigos = [];
 let nomeAmigo;
 listaDeAmigo = document.getElementById('listaAmigos');
 listaDeAmigo.innerHTML = '';
+
 function adicionarAmigo() {
     nomeAmigo = document.getElementById('amigo').value;
     if (nomeAmigo == '') {
@@ -33,7 +34,6 @@ function adicionarLista() {
 function sortearAmigo() {
     let amigoResultado = document.getElementById('resultado');
     amigoResultado = '';
-
     if (amigos.length === 0) {
         alert('Não há nomes para serem sorteados!');
     }
@@ -45,15 +45,21 @@ function sortearAmigo() {
         amigos.splice(amigoNumero, 1);
         adicionarLista();
         console.log(amigos);
-    } if (amigos === 0) {
-        alert('Todos os amigos foram sorteados!');
-    }
+    } 
 } 
 
 function limparCampo() {
     listaNome = document.getElementById('amigo');
     listaNome.value = '';
 }
-
+function reiniciarSorteio() {
+    let botao = document.createElement('button');
+    botao.textContent = 'Reiniciar';
+    botao.addEventListener('click', function() {
+        location.reload();
+    })
+    document.body.appendChild(botao);
+}
+reiniciarSorteio();
 console.log(amigos);
 

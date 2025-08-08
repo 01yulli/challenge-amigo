@@ -1,5 +1,5 @@
 let amigos = [];
-let nomeAmigo;s
+let nomeAmigo;
 listaDeAmigo = document.getElementById('listaAmigos');
 listaDeAmigo.innerHTML = '';
 

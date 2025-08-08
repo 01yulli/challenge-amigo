@@ -1,5 +1,5 @@
 let amigos = [];
-let nomeAmigo;
+let nomeAmigo;s
 listaDeAmigo = document.getElementById('listaAmigos');
 listaDeAmigo.innerHTML = '';
 
@@ -39,7 +39,7 @@ function sortearAmigo() {
         let amigoNumero = Math.floor(Math.random() * amigos.length);
         let amigoSorteado = amigos[amigoNumero];
         let amigoResultado = document.getElementById('resultado');
-        amigoResultado.innerHTML = amigoSorteado;
+        amigoResultado.innerHTML = `O amigo sorteado é: ${amigoSorteado}!`;
         amigos.splice(amigoNumero, 1);
         adicionarLista();
         console.log(amigos);
